@@ -11,3 +11,6 @@ CREATE TABLE users (
 For the end user, the only pages that they see are the register.php and login.php pages. authenticate.php and db.php are additional files needed to interact with the database. api.php is the additional file needed to provide API.
 
 `login_website` folder and `login_website_API_consumer` folder must be placed in `C:\xampp\htdocs` (assuming you install XAMPP in the default location).
+
+- Login website repo: https://github.com/Random0617/login_website
+- Login website API consumer repo: https://github.com/Random0617/login_website_API_consumer
