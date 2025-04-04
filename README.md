@@ -14,3 +14,10 @@ For the end user, the only pages that they see are the register.php and login.ph
 
 - Login website repo: https://github.com/Random0617/login_website
 - Login website API consumer repo: https://github.com/Random0617/login_website_API_consumer
+
+## Postman demo
+![Postman demo](/Postman demo/Postman demo (1).png)
+
+![Postman demo](/Postman demo/Postman demo (2).png)
+
+![Postman demo](/Postman demo/Postman demo (3).png)
