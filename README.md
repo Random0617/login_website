@@ -1,5 +1,5 @@
 # Login website
-This is a basic website consisting of only a login page to demonstrate how websites interact with database. The database consists of a single table called "users", with three columns:
+This is a basic website consisting of only a login page to demonstrate how websites interact with database. Create a database called `login_website_db`, and in it create a user table using the following SQL script:
 ```
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,

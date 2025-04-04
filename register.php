@@ -8,9 +8,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Insert user into the database
     $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $username, $password);
+    /*
+    Prepares an SQL statement for execution
+    @param string $query
+    The query, as a string. It must consist of a single SQL statement.
 
-    if ($stmt->execute()) {
+    The SQL statement may contain zero or more parameter markers represented by question mark (?) characters at the appropriate positions.
+    @link https://php.net/manual/en/mysqli.prepare.php
+    */
+    $stmt->bind_param("ss", $username, $password);
+    /*
+    Binds variables to a prepared statement as parameters
+    @param string $types
+    A string that contains one or more characters which specify the types for the corresponding bind variables:
+
+    @param mixed &$var1
+    The number of variables and length of string types must match the parameters in the statement.
+
+    @link https://php.net/manual/en/mysqli-stmt.bind-param.php
+    */
+
+    if ($stmt->execute()) { // Executes a prepared statement
         echo "Registration successful! <a href='login.php'>Login here</a>";
     } else {
         echo "Error: " . $conn->error;
