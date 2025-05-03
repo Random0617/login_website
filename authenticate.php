@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 */
-// require is requivalent to #include
+// require is equivalent to #include
 require 'db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
